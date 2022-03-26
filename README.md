@@ -379,6 +379,8 @@ If you want to export specific icons/images you can list their names in the last
 
 `./figma-export icons` — Exports all the icons.
 
+⚠️ Wildcard doesn't work on Linux.
+
 Argument `-i` or `-input` specifies path to FigmaExport configuration file `figma-export.yaml`.
 
 ### Configuration
