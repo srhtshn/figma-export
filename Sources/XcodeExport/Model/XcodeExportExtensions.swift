@@ -189,7 +189,8 @@ extension Image {
             urlString.append("@\(scaleString)")
         }
 
-        return URL(string: urlString)!.appendingPathExtension(format)
+        let encodedUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
+        return URL(string: encodedUrlString)!.appendingPathExtension(format)
     }
 
     fileprivate func isValidForXcode(scale: Scale) -> Bool {
